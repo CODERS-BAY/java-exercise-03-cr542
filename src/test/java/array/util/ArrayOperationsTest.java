@@ -44,8 +44,8 @@ class ArrayOperationsTest {
 		int[] expected = numbers.clone();
 		Arrays.sort(expected);
 		int[] result = instance.sort();
-		assertArrayEquals(expected, result);
 		printArrays("sort", expected, result);
+		assertArrayEquals(expected, result);
 	}
 
 	@org.junit.jupiter.api.Test
