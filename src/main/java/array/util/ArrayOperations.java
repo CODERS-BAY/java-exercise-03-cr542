@@ -82,14 +82,14 @@ public class ArrayOperations {
      * @return the average value of all elements summed up.
      */
     public double average() {
-    	return (sumUpValues() / numbers.length);
+    	return ((double)sumUpValues() / numbers.length);
     }
 
     /**
      * @return the average value of all elements summed up, but without the highest and the lowest value.
      */
     public double trimmedMean() {
-        return (sumUpValues() - getHighestValue() - getLowestValue()) / (numbers.length - 2);
+        return ((double)sumUpValues() - getHighestValue() - getLowestValue()) / (numbers.length - 2);
     }
 
     /**
